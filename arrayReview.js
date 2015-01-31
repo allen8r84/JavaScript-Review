@@ -25,7 +25,7 @@ for (var i = 0; i < evenArray.length; i++) {
 }
 console.log(evenArray);
 
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+/*#3  ===   NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
 
@@ -36,8 +36,16 @@ var getRandomArbitrary = function() {
 var randomArray = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 
   //code here
-
-
+var itItThere = function(rn) {
+        var a = rn;
+        console.log(a);
+        if (randomArray.indexOf(a) !== -1){
+            alert(true);
+        } else {
+            alert(false);
+        }
+}
+itItThere(getRandomArbitrary());
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
