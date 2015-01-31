@@ -9,7 +9,7 @@ var last = function() {
 
 alert(last());
 
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+/*#2   === NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
 
@@ -17,7 +17,13 @@ alert(last());
 var evenArray = [1,2,3,6,22,98,45,23,22,12];
 
   //code here
-
+for (var i = 0; i < evenArray.length; i++) {
+    if (evenArray[i] % 2 !== 0) {
+        evenArray.splice(i,1);
+        i--;
+    }
+}
+console.log(evenArray);
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
