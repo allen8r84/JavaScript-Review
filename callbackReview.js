@@ -27,10 +27,18 @@ last(names, function(lastName){
 
 
 
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+/*#3  ===  NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 //have the contains function return a boolean value for if the name is in the array or not.
-
+var contains = function(a, arr, cb) {
+    var answer;
+    for (var i = 0; i < arr.length; i++) {
+        if (a.toUpperCase() === arr[i].toUpperCase()){
+            answer = "yes";
+        }
+    }
+    cb(answer);
+}
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 contains('Colt', names, function(yes){
@@ -44,7 +52,7 @@ contains('Colt', names, function(yes){
 
 
 
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+/*#4  ===   NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
 
