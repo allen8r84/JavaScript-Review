@@ -46,7 +46,7 @@ var itItThere = function(rn) {
         }
 }
 itItThere(getRandomArbitrary());
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+/*#4  === NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
 
@@ -55,13 +55,15 @@ var first = [1,2,3,4,5];
 var second;
 
   //code here
+  var second = first.slice();
+  second.push(6,7);
 
 alert(first) //[1,2,3,4,5];
 alert(second) //[1,2,3,4,5,6,7];
 
 
 
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+/*#5 ===  NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
 
