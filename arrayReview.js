@@ -3,8 +3,11 @@ var threeItems = [1,2,3];
 //alert the result of your function
 
   //code here
+var last = function() {
+    return threeItems[threeItems.length - 1];
+}
 
-
+alert(last());
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
