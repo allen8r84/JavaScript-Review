@@ -71,9 +71,20 @@ alert(second) //[1,2,3,4,5,6,7];
 var sentence = "Dev Mountain is the best"
 
   //code here
+var longest = function(a) {
+    var tempArr = a.split(" ");
+    console.log(tempArr);
+    var longWord = tempArr[0];
+    for (var i = 0; i < tempArr.length; i++) {
+        if (longWord.length < tempArr[i].length) {
+            longWord = tempArr[i];
+        }
+    }
+    return longWord;
+}
+longest(sentence);
 
-
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+/*#6 === NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
 
