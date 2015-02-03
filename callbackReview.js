@@ -54,7 +54,9 @@ contains('Colt', names, function(yes){
 
 /*#4  ===   NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 var map = function(arr, cb) {
-        cb(arr.map(map));
+        for (var i = 0; i < arr.length; i++) {
+            cb(arr[i]);
+        }
    }
 
 var numbers = [1,2,3,4,5];
@@ -89,14 +91,18 @@ uniq(names, function(uniqArr){
 
 
 
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+/*#6 ===  NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
-
+var each = function(arr, cb) {
+    for (var i = 0; i < arr.length; i++) {
+        cb(arr[i], i);
+    }
+}
 
 
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
 each(names, function(item, indice){
-  console.log('The item in the ' + indice + 'position is ' + item)
+  console.log('The item in the ' + indice + ' position is ' + item)
 });
 
 
