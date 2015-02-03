@@ -67,7 +67,17 @@ map(numbers, function(num){
 
 
 /*#5  ===  NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
+var uniq = function(arr, cb) {
+    var uniqArr = [];
+    var tempObj = {};
+    for (var i = 0; i < arr.length; i++) {
+        tempObj[arr[i]] = null;
+    }
+    for (var key in tempObj) {
+        uniqArr.push(key);
+    }
+    cb(uniqArr);
+}
 
 
 
