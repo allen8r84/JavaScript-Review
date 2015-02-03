@@ -54,9 +54,11 @@ contains('Colt', names, function(yes){
 
 /*#4  ===   NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 var map = function(arr, cb) {
+        var newArray = [];
         for (var i = 0; i < arr.length; i++) {
-            cb(arr[i]);
+            newArray.push(cb(arr[i]));
         }
+        return newArray;
    }
 
 var numbers = [1,2,3,4,5];
@@ -148,7 +150,12 @@ getUserById('16t', users, function(user){
 
 /*#8  ===   NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 var find = function(arr, cb) {
-    
+    var newNum = null;
+    for (var i = 0; i <arr.length; i++){
+        if (cb(arr[i])) {
+            return arr[i];
+        }
+    }
 }
 
 
