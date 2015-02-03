@@ -108,9 +108,15 @@ each(names, function(item, indice){
 
 
 
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+/*#7  ===  NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
-
+var getUserById = function(a, arr, cb) {
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i].id === a) {
+            cb(arr[i]);
+        }
+    }
+}
 
 
 var users = [
@@ -140,7 +146,7 @@ getUserById('16t', users, function(user){
 
 
 
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+/*#8  ===   NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
 
