@@ -53,9 +53,9 @@ contains('Colt', names, function(yes){
 
 
 /*#4  ===   NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
-
-
+var map = function(arr, cb) {
+        cb(arr.map(map));
+   }
 
 var numbers = [1,2,3,4,5];
 //Produces a new array of values by mapping each value in list through a transformation function
@@ -66,7 +66,7 @@ map(numbers, function(num){
 
 
 
-/* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
+/*#5  ===  NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
 
