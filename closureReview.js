@@ -10,7 +10,8 @@ var callFriend = function(){
 //Do what you need to do in order to call your function and get 'Calling Jake at 435-215-9248' in your console.
 
   //code here
-
+var new1 = callFriend();
+new1("435-215-9248");
 
 
 /*
