@@ -147,7 +147,9 @@ getUserById('16t', users, function(user){
 
 
 /*#8  ===   NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
-
+var find = function(arr, cb) {
+    
+}
 
 
 
