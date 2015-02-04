@@ -1,7 +1,7 @@
 /* Make sure you do these last */
 
 /*
-
+#1  
 Write a function that takes an array of integers and returns the sum of the integers after adding 1 to each.
 
 plusOneSum([1, 2, 3, 4]); // 14
@@ -17,17 +17,19 @@ var plusOneSum = function(a) {
 plusOneSum([1, 2, 3, 4]);
 
 /*
-
+#2
 Write a function that accepts a multi dimensional array and returns a flattened version.
 
 flatten([1, 2, [3, [4], 5, 6], 7]) // [1, 2, 3, 4, 5, 6, 7]
 
 */
-
-
-
+var flatten = function(a) {
+    var newArr = a.join().split(',').join('').split(''); // 1st - joins the arrays (multi-d will be saparated with comma) 2nd- split but remove the comma 3rd- join all together 4th- split all
+    return newArr;
+}
+flatten([1, 2, [3, [4], 5, 6], 7]);
 /*
-
+#3
 Given an array [a1, a2, ..., aN, b1, b2, ..., bN, c1, c2, ..., cN] convert it to [a1, b1, c1, a2, b2, c2, ..., aN, bN, cN]
 
 */
