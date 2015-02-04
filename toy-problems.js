@@ -33,8 +33,12 @@ flatten([1, 2, [3, [4], 5, 6], 7]);
 Given an array [a1, a2, ..., aN, b1, b2, ..., bN, c1, c2, ..., cN] convert it to [a1, b1, c1, a2, b2, c2, ..., aN, bN, cN]
 
 */
-
-
+var sortFunct = function(a) {
+    a.sort(1);
+    return a;
+}
+var newArr = ['a1', 'a2', 'a3', 'aN', 'b1', 'b2', 'b3', 'bN', 'c1', 'c2', 'c3', 'cN'];
+sortFunct(newArr);
 /*
 
 There is an array of non-negative integers. A second array is formed by shuffling the elements of the first array and deleting a random element. Given these two arrays, find which element is missing in the second array.
